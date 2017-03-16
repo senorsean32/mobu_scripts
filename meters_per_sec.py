@@ -12,8 +12,7 @@ def find_key_avg(kList):
     for key in kList:
         total += key.Value
     return total/float(len(kList))
-            
-    
+           
 def key_variance(kList):
     # Calculate the variance between all the keys
     # This will help determine which translation axis is the movement direction of the cycle
@@ -66,7 +65,6 @@ def calc(dist, frames):
     
     return abs(float(m/sec))
     
-
 # Grab a reference to the Scene
 scene = FBSystem().Scene
 
@@ -78,7 +76,7 @@ FBGetSelectedModels(models)
 if len(models) == 0:
     FBMessageBox("Model Selection Error:", "No selected models found\n Select a model and try again!", "Ok")
 else:
-    
+    # Create a list which will be populated by the translation channels
     key_list = []
     # Get access to the X,Y,Z translation node keys
     for model in models:
