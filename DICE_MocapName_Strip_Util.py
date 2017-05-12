@@ -4,6 +4,7 @@ import re
 def DICE_mocap_name_strip(text):
     '''
     Find Imagination Studio substrings in the take name and remove them
+    EX: DCE_WRS_07_005_001_Basic_Soldier_Melee_FullBody_Combos_V1_JN_1_Select_1
     '''
     
     # First search for the version type(numbered or starts with 'V')
